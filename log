@@ -1,0 +1,61 @@
+Script started on 2023-10-14 03:57:41+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="136" LINES="68"]
+[?2004h]0;melragaby@my-cs400-vm1: ~/p1[01;32mmelragaby@my-cs400-vm1[00m:[01;34m~/p1[00m$ git log -1
+[?2004l[?1h=[33mcommit c048364517582212bbe5805a9f30d7d891d61c2f[m[33m ([m[1;36mHEAD -> [m[1;32mfrontend[m[33m)[m[m
+Author: Momen <melragaby@wisc.edu>[m
+Date:   Sat Oct 14 03:56:41 2023 +0000[m
+[m
+    adding log file[m
+[K[?1l>[?2004h]0;melragaby@my-cs400-vm1: ~/p1[01;32mmelragaby@my-cs400-vm1[00m:[01;34m~/p1[00m$ git status 
+[?2004lOn branch frontend
+Your branch is ahead of 'origin/frontend' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   log[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;melragaby@my-cs400-vm1: ~/p1[01;32mmelragaby@my-cs400-vm1[00m:[01;34m~/p1[00m$ make clean
+[?2004lrm -f *.class
+[?2004h]0;melragaby@my-cs400-vm1: ~/p1[01;32mmelragaby@my-cs400-vm1[00m:[01;34m~/p1[00m$ ls 
+[?2004lBackendCarOrganizer.java           Frontend.java                IterableMultiKeySortedCollectionInterface.java  TextUITester.java
+BackendInterface.java              FrontendCarOrganizer.java    KeyListInterface.java                           cars.csv
+BackendSingleCarCarOrganizer.java  FrontendDeveloperTests.java  Makefile                                        log
+BackendSingleCarInterface.java     FrontendInterface.java       SortedCollectionInterface.java
+[?2004h]0;melragaby@my-cs400-vm1: ~/p1[01;32mmelragaby@my-cs400-vm1[00m:[01;34m~/p1[00m$ git all
+[?2004lgit: 'all' is not a git command. See 'git --help'.
+
+The most similar command is
+	pull
+[?2004h]0;melragaby@my-cs400-vm1: ~/p1[01;32mmelragaby@my-cs400-vm1[00m:[01;34m~/p1[00m$ make all
+[?2004ljavac Frontend.java
+javac FrontendCarOrganizer.java
+javac BackendInterface.java
+javac BackendSingleCarCarOrganizer.java
+javac BackendSingleCarInterface.java
+javac FrontendInterface.java
+javac -cp .:../junit5.jar FrontendDeveloperTests.java
+Note: FrontendDeveloperTests.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+java -jar ../junit5.jar -cp . -c FrontendDeveloperTests
+Main Menu:
+a- Load Data File
+b- List of Vehicles with the lowest mileage
+c- List vehicles at or above a threshold
+d- Exit
+Enter your choice: ^X^Cmake: *** [Makefile:14: runFDTests] Error 130
+
+[?2004h]0;melragaby@my-cs400-vm1: ~/p1[01;32mmelragaby@my-cs400-vm1[00m:[01;34m~/p1[00m$ make [7mrunFDTests[27mrunFDTests
+[?2004ljava -jar ../junit5.jar -cp . -c FrontendDeveloperTests
+Main Menu:
+a- Load Data File
+b- List of Vehicles with the lowest mileage
+c- List vehicles at or above a threshold
+d- Exit
+Enter your choice: ^X^Cmake: *** [Makefile:14: runFDTests] Error 130
+
+[?2004h]0;melragaby@my-cs400-vm1: ~/p1[01;32mmelragaby@my-cs400-vm1[00m:[01;34m~/p1[00m$ exit
+[?2004lexit
+
+Script done on 2023-10-14 03:58:33+00:00 [COMMAND_EXIT_CODE="130"]
